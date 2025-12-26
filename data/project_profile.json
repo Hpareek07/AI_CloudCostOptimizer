@@ -1,0 +1,18 @@
+{
+  "name": "Private Movie Cloud",
+  "budget_inr_per_month": 50000,
+  "description": "A private cloud for watching movies with friends and family",
+  "tech_stack": {
+    "frontend": "React",
+    "backend": "Node.js",
+    "database": "MongoDB",
+    "proxy": "NGINX",
+    "hosting": "AWS EC2"
+  },
+  "non_functional_requirements": [
+    "High availability",
+    "Scalability",
+    "Security",
+    "User authentication and authorization"
+  ]
+}

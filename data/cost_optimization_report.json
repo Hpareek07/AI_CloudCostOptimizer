@@ -1,0 +1,162 @@
+{
+  "project_name": "Private Movie Cloud",
+  "analysis": {
+    "total_monthly_cost": 35100,
+    "budget": 50000,
+    "budget_variance": 14800,
+    "service_costs": {
+      "AWS EC2": 1500,
+      "AWS RDS": 15000,
+      "AWS S3": 500,
+      "AWS VPC": 1000,
+      "AWS CloudWatch": 500,
+      "AWS Lambda": 1000,
+      "AWS DynamoDB": 5000,
+      "AWS CloudFront": 2000,
+      "AWS Route 53": 500,
+      "AWS Elastic Beanstalk": 2000,
+      "AWS IAM": 100,
+      "AWS CloudTrail": 500,
+      "AWS CloudFormation": 200,
+      "AWS CodeBuild": 1000,
+      "AWS CodePipeline": 500,
+      "AWS X-Ray": 200
+    },
+    "high_cost_services": {
+      "AWS RDS": 15000,
+      "AWS DynamoDB": 5000,
+      "AWS Elastic Beanstalk": 2000,
+      "AWS CloudFront": 2000,
+      "AWS CodeBuild": 1000
+    },
+    "is_over_budget": true
+  },
+  "recommendations": [
+    {
+      "title": "Migrate to AWS Free Tier for Development and Testing",
+      "service": "AWS EC2",
+      "current_cost": 1500,
+      "potential_savings": 1500,
+      "recommendation_type": "AWS Free Tier",
+      "description": "Migrate development and testing environments to AWS Free Tier to reduce costs.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Identify development and testing environments",
+        "Migrate to AWS Free Tier",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Optimize AWS RDS Instance Type",
+      "service": "AWS RDS",
+      "current_cost": 15000,
+      "potential_savings": 5000,
+      "recommendation_type": "Optimization",
+      "description": "Optimize AWS RDS instance type to reduce costs.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Identify current instance type",
+        "Optimize instance type",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "AWS"
+      ]
+    },
+    {
+      "title": "Use Azure Cosmos DB for NoSQL Database",
+      "service": "AWS DynamoDB",
+      "current_cost": 5000,
+      "potential_savings": 2000,
+      "recommendation_type": "Azure",
+      "description": "Use Azure Cosmos DB for NoSQL database to reduce costs.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Identify current database",
+        "Migrate to Azure Cosmos DB",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "Azure"
+      ]
+    },
+    {
+      "title": "Use Google Cloud Storage for Object Storage",
+      "service": "AWS S3",
+      "current_cost": 500,
+      "potential_savings": 200,
+      "recommendation_type": "Google Cloud",
+      "description": "Use Google Cloud Storage for object storage to reduce costs.",
+      "implementation_effort": "low",
+      "risk_level": "low",
+      "steps": [
+        "Identify current object storage",
+        "Migrate to Google Cloud Storage",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": [
+        "Google Cloud"
+      ]
+    },
+    {
+      "title": "Use NGINX for Load Balancing",
+      "service": "AWS Elastic Load Balancer",
+      "current_cost": 1000,
+      "potential_savings": 500,
+      "recommendation_type": "Open-Source",
+      "description": "Use NGINX for load balancing to reduce costs.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Identify current load balancer",
+        "Migrate to NGINX",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": []
+    },
+    {
+      "title": "Use Apache Kafka for Message Queue",
+      "service": "AWS SQS",
+      "current_cost": 500,
+      "potential_savings": 200,
+      "recommendation_type": "Open-Source",
+      "description": "Use Apache Kafka for message queue to reduce costs.",
+      "implementation_effort": "medium",
+      "risk_level": "medium",
+      "steps": [
+        "Identify current message queue",
+        "Migrate to Apache Kafka",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": []
+    },
+    {
+      "title": "Use PostgreSQL for Relational Database",
+      "service": "AWS RDS",
+      "current_cost": 15000,
+      "potential_savings": 5000,
+      "recommendation_type": "Open-Source",
+      "description": "Use PostgreSQL for relational database to reduce costs.",
+      "implementation_effort": "high",
+      "risk_level": "high",
+      "steps": [
+        "Identify current relational database",
+        "Migrate to PostgreSQL",
+        "Monitor and adjust as needed"
+      ],
+      "cloud_providers": []
+    }
+  ],
+  "summary": {
+    "total_potential_savings": 23100,
+    "savings_percentage": 46.2,
+    "recommendations_count": 7,
+    "high_impact_recommendations": 3
+  }
+}
