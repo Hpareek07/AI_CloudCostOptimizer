@@ -12,10 +12,6 @@ def generate_mock_billing(profile_path: str, output_path: str):
         print(f"Error: Profile file not found at {profile_path}")
         return
 
-    project_name = profile.get("name", "Project")
-    hosting_provider = profile.get("tech_stack", {}).get("hosting", "AWS")
-    budget = profile.get("budget_inr_per_month", 5000)
-
     prompt=[
         {
             "role": "system",
@@ -60,9 +56,3 @@ def generate_mock_billing(profile_path: str, output_path: str):
     except Exception as e:
         print(f"Error extracting profile: {e}")
         return None
-
-if __name__ == "__main__":
-    # Create a dummy description file for testing if needed, or just handle gracefully
-    output_file = "project_billing.json"
-    profile_path= "project_profile.json"
-    generate_mock_billing(profile_path, output_file)

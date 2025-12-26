@@ -61,7 +61,4 @@ def extract_project_profile(description_path: str, output_path: str):
         print(f"Error extracting profile: {e}")
         return None
 
-if __name__ == "__main__":
-    # Create a dummy description file for testing if needed, or just handle gracefully
-    output_file = "project_profile.json"
-    extract_project_profile("a private cloud for movies", output_file)
+

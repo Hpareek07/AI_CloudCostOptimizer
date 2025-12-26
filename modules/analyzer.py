@@ -93,9 +93,3 @@ def analyze_costs(profile_path: str, billing_path: str, output_path: str):
         print(f"Error analyzing costs: {e}")
         return None
 
-if __name__ == "__main__":
-    # Create a dummy description file for testing if needed, or just handle gracefully
-    profile_path = "project_profile.json"
-    billing_path = "project_billing.json"
-    output_file = "project_analysis.json"
-    analyze_costs(profile_path, billing_path, output_file)
